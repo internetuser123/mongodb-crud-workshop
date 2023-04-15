@@ -1,0 +1,26 @@
+{
+  "name": "mongodb-crud-workshop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/internetuser123/mongodb-crud-workshop.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/internetuser123/mongodb-crud-workshop/issues"
+  },
+  "homepage": "https://github.com/internetuser123/mongodb-crud-workshop#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-handlebars": "^7.0.6",
+    "mongodb": "^5.2.0"
+  }
+}
