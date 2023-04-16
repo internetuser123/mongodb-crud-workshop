@@ -1,0 +1,81 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    min-height: 200px;
+    height: 20vh;
+    background: rgb(68, 138, 163);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background: rgb(201, 230, 150);
+}
+
+a {
+    margin: 1rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+    height: 50vh;
+}
+
+footer {
+    padding: 20px;
+    background: rgb(68, 138, 163);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type=text],
+input[type=number],
+input[type=password],
+textarea,
+select {
+    border: 1px solid black;
+    font-size: 1em;
+    padding: 3px;
+    margin: 3px 0;
+    border-radius: 3px;
+    width: 240px;
+}
+
+.btn {
+    font-weight: 700;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid gray;
+}
