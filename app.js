@@ -1,7 +1,7 @@
 const bodyParser = require("body-parser")
 const express = require("express")
 const exphbs = require("express-handlebars")
-const { MongoClient } = require("mongodb")
+const { MongoClient, ObjectId } = require("mongodb")
 
 const connectionUrl = "mongodb://localhost:27017"
 const client = new MongoClient(connectionUrl)
@@ -48,6 +48,14 @@ app.post("/new-note", async (req, res) => {
     await collection.insertOne(newNote)
 
     res.redirect("/")
+})
+
+app.get("/edit-note", (req, res) => {
+    
+})
+
+app.post("/edit-note", (req, res) => {
+    const objectId = new ObjectId(req.params.id)
 })
 
 app.listen(3000, () => {
