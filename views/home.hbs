@@ -3,9 +3,14 @@
 </h1>
 
 <ul>
-    {{#each workshop}}
+    {{#each notes}}
         <li>
-            <p>{{desc}} <a href="/edit-note">Edit note</a></p>
+            <p>{{desc}}
+                <a href="/note/{{_id}}">Edit note</a>
+                <form action="/delete-note/{{_id}}" method="post">
+                    <input type="submit" value="Delete Note" class="btn">
+                </form>
+            </p>
         </li>
     {{/each}}
 </ul>

@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/internetuser123/mongodb-crud-workshop#readme",
   "dependencies": {
+    "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "express-handlebars": "^7.0.6",
     "mongodb": "^5.2.0"

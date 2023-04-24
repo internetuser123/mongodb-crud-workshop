@@ -1,4 +1,5 @@
-<form action="/edit-note" method="post">
-    <input type="text" name="desc" placeholder="Update your note...">
+<form action="/edit-note/{{note._id}}" method="post">
+    <input type="text" name="desc" placeholder="Update your note..." value="{{note.desc}}">
     <input type="submit" value="Submit" class="btn">
 </form>
+
